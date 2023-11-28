@@ -131,11 +131,6 @@ def save_video(message):
 
 
     
-def get_contact_keyboard():
-    keyboard = types.InlineKeyboardMarkup()
-    contact_button = types.InlineKeyboardButton(text='Отправить контакт', callback_data='request_contact')
-    keyboard.add(contact_button)
-    return keyboard
 
-# Запуск бота
+
 bot.polling()
